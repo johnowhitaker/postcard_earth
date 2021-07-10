@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="thumbnail.png" />
+	<title>AI Postcard Earth</title>
+	<style>
+		body { margin: 0; overflow: hidden; background-color: #000; }
+		.tm  { position: absolute; top: 10px; right: 10px; }
+		.webgl-error { font: 15px/30px monospace; text-align: center; color: #fff; margin: 50px; }
+		.webgl-error a { color: #fff; }
+    </style>
+</head>
+<body>
+	<div id="webgl"></div>
+	<div class="tm">
+  <input type="checkbox" id="rot_check" name="drone" value="on"
+         checked>
+  <label for="rot_check" style="color:white;">Rotate</label>
+	<input type="checkbox" id="directional_light" name="directional_light" value="on">
+  <label for="directional_light" style="color:white;">Uniform Light</label>
+	</div>
+	<script src="js/three.min.js"></script>
+	<script src="js/Detector.js"></script>
+	<script src="js/TrackballControls.js"></script>
+	<script src="js/earth.js"></script>
+</body>
+</html>
